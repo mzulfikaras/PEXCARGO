@@ -78,6 +78,9 @@
               <input type="text" name="total" id="total" class="form-control mb-2">
             </div>
 
+            <label for="status">Status : </label>
+            <input type="text" name="status" id="status" class="form-control mb-2" value="BARANG BELUM DIKIRIM" readonly>
+
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>

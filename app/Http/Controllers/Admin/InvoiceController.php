@@ -69,6 +69,7 @@ class InvoiceController extends Controller
             'jml_berat' => 'required|integer',
             'harga_satuan' => 'required',
             'total' => 'required',
+            'status' => 'required',
         ]);
 
         Invoice::create($validateData);
@@ -107,6 +108,7 @@ class InvoiceController extends Controller
             'jml_berat' => 'required|integer',
             'harga_satuan' => 'required',
             'total' => 'required',
+            'status' => 'required',
         ]);
 
         $invoice->update($validateData);
@@ -177,6 +179,7 @@ class InvoiceController extends Controller
             'jml_berat' => 'required|integer',
             'harga_satuan' => 'required',
             'total' => 'required',
+            'status' => 'required',
         ]);
 
         Invoice::create($validateData);
@@ -215,6 +218,7 @@ class InvoiceController extends Controller
             'jml_berat' => 'required|integer',
             'harga_satuan' => 'required',
             'total' => 'required',
+            'status' => 'required',
         ]);
 
         $invoice->update($validateData);

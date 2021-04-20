@@ -23,5 +23,6 @@ class Invoice extends Model
         'jml_berat',
         'harga_satuan',
         'total',
+        'status'
     ];
 }

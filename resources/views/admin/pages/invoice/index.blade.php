@@ -53,6 +53,7 @@
                     <th scope="col">Jumlah Berat(KG)</th>
                     <th scope="col">Harga Satuan</th>
                     <th scope="col">Jumlah Total</th>
+                    <th scope="col">Status</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
@@ -64,20 +65,21 @@
                     <th><b>{{$data->alamat}}</b></th>
                     <th><b>{{$data->no_telp}}</b></th>
                     <td><b>{{$data->kota_asal}}</b></td>
-                    <td><b>{{$data->kota_tujuan}}</b></td>
                     <td><b>{{$data->jenis_pengiriman}}</b></td>
+                    <td><b>{{$data->kota_tujuan}}</b></td>
                     <td><b>{{$data->no_seri}}</b></td>
                     <td><b>{{$data->jml_kiriman}}</b></td>
                     <td>{{$data->nama_barang}}</td>
                     <td><b>{{$data->jml_berat}}</b></td>
                     <td>{{$data->harga_satuan}}</td>
                     <td>{{$data->total}}</td>
+                    <td>{{$data->status}}</td>
                     <td>
                         <form action="{{route('invoice.destroy', $data->id)}}" method="POST">
                             @csrf
                             @method('DELETE')
                             <a href="{{route('invoice.edit', $data->id)}}" class="btn btn-warning">Edit</a>
-                            <button type="submit" class="btn btn-danger">Hapus</button>
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Anda Yakin Akan Menghapus Data?')">Hapus</button>
                         </form>
                     </td>
                 </tr>

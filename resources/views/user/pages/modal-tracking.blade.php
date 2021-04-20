@@ -38,9 +38,9 @@
                                     <p>Nama Customer : </p>
                                     <p style="background-color: green">{{$pengiriman->nama}}</p>
                                 </div>
-                                <div class="col-4">
-                                    <i class="fas fa-map-marked-alt text-center" style="font-size: 36px"></i>
-                                    <p class="text-center">Alamat : </p>
+                                <div class="col-4 text-center">
+                                    <i class="fas fa-map-marked-alt" style="font-size: 36px"></i>
+                                    <p>Alamat : </p>
                                     <p>{{ $pengiriman->alamat }}</p>
                                 </div>
                                 <div class="col-4 text-center">
@@ -124,9 +124,7 @@
             </div>
         </div>
         <div class="modal-footer">
-            @if (!empty($tracking->tgl_sampai))
-                <a href="{{route('front.invoice', $tracking->id)}}" class="btn btn-primary">Cetak Invoice</a>
-            @endif
+            <a href="{{route('front.invoice', $pengiriman->id)}}" class="btn btn-primary">Cetak Invoice</a>
             <a href="{{route('front.index')}}" class="btn btn-secondary">Close</a>
         </div>
       </div>

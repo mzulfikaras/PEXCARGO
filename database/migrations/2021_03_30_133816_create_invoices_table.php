@@ -30,6 +30,7 @@ class CreateInvoicesTable extends Migration
             $table->integer('jml_berat')->nullable();
             $table->bigInteger('harga_satuan')->nullable();
             $table->bigInteger('total')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

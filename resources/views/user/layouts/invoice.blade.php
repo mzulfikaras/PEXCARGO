@@ -69,7 +69,11 @@
         </thead>
         <tbody id="content">
             <tr>
-                <td>{{$report->no_smu}}</td>
+                @if ($report->jenis_pengiriman == "PORT TO PORT")
+                    <td>{{$report->no_smu}}</td>
+                @else
+                    <td></td>
+                @endif
                 <td>{{$report->jml_kiriman}}</td>
                 <td>{{$report->nama_barang}}</td>
                 <td>{{$report->jml_berat}}</td>

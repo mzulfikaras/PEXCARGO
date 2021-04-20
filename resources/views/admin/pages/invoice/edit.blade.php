@@ -81,6 +81,9 @@
               <input type="text" name="total" id="total" class="form-control mb-2" value="{{old('total', $invoice->total)}}">
             </div>
 
+            <label for="status">Status : </label>
+            <input type="text" name="status" id="status" class="form-control mb-2" value="{{old('status', $invoice->status)}}" readonly>
+
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>

@@ -68,6 +68,7 @@ class ReportController extends Controller
         foreach($dataInvoice as $data){
             $data->tgl_berangkat = $validateData['tgl_berangkat'];
             $data->no_smu = $validateData['no_smu'];
+            $data->status = "Barang Sudah Terkirim";
             $data->save();
         }
 
@@ -161,6 +162,7 @@ class ReportController extends Controller
         foreach($dataInvoice as $data){
             $data->tgl_berangkat = $validateData['tgl_berangkat'];
             $data->no_smu = $validateData['no_smu'];
+            $data->status = "Barang Sudah Terkirim";
             $data->save();
         }
 

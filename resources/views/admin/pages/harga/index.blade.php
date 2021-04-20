@@ -179,7 +179,7 @@
                                 @method('DELETE')
 
                                 <a href="{{route('harga.edit', $harga->id)}}" class="btn btn-warning"><i class="far fa-edit"></i></a>
-                                <button type="submit" class="btn btn-danger"><i class='far fa-trash-alt'></i></button>
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('Anda Yakin Akan Menghapus Data?')"><i class='far fa-trash-alt'></i></button>
                             </form>
                         </td>
                     </tr>

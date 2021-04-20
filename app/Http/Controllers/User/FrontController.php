@@ -77,7 +77,7 @@ class FrontController extends Controller
     }
 
     public function userInvoice(Invoice $report){
-        $invoice = PDF::loadview('user.layouts.invoice', ['report' => $report])->setPaper('a3','potrait');
+        $invoice = PDF::loadview('user.layouts.invoice', compact('report'))->setPaper('a3','potrait');
         return $invoice->stream();
     }
 }

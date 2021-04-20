@@ -77,7 +77,7 @@
                             @csrf
                             @method('DELETE')
                             <a href="{{route('jayapura.invoice.edit', $data->id)}}" class="btn btn-warning">Edit</a>
-                            <button type="submit" class="btn btn-danger">Hapus</button>
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Anda Yakin Akan Menghapus Data?')">Hapus</button>
                         </form>
                     </td>
                 </tr>

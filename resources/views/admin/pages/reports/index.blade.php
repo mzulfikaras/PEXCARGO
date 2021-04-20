@@ -105,7 +105,7 @@
                         <form action="{{route('report.hapus', $report->id)}}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger"><i class='far fa-trash-alt'></i></button>
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Anda Yakin Akan Menghapus Data?')"><i class='far fa-trash-alt'></i></button>
                         </form>
                     </td>
                 </tr>
